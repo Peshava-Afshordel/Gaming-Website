@@ -1,0 +1,524 @@
+@import url(app.css);
+@media screen and (max-width: 1400px) {
+  .menu {
+    gap: 7rem;
+  }
+  .nav__links {
+    max-width: 20rem;
+  }
+
+  .nav__search-btn {
+    display: none;
+  }
+
+  .nav__wrapper {
+    justify-content: space-between;
+  }
+
+  .Reviews__content {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: flex-start;
+  }
+  .Reviews__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 36rem;
+    padding: 1rem;
+    text-align: left;
+  }
+  .Reviews__img-wrapper {
+    max-height: 38rem;
+    max-width: 100%;
+  }
+
+  .Reviews__item-cotent {
+    max-width: 100%;
+  }
+  .Reviews__item-info {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+    max-width: 100%;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .Reviews__item-info .app-btn {
+    width: 100%;
+    margin-top: 1 rem;
+  }
+  .Reviews__item-cotent p {
+    min-height: 11rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .menu {
+    gap: 3rem;
+  }
+  .header {
+    background-position: center;
+  }
+  .header__content__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .header__content-right {
+    margin-top: 4rem;
+  }
+  .main {
+    margin-top: 50rem;
+  }
+  .Reviews__content {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  * {
+    cursor: default !important;
+  }
+  .nav__links {
+    display: none;
+  }
+  .nav__wrapper {
+    flex-direction: row-reverse;
+  }
+  .nav__search-btn {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+  .menu__mobile {
+    display: flex;
+  }
+
+  .menu__mobile .nav__search-mobile {
+    width: 95%;
+    margin: 0 auto;
+    height: 5rem;
+    display: none;
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+    align-items: center;
+    border-radius: var(--radius-80);
+    background-color: var(--orange-500);
+    -webkit-border-radius: var(--radius-80);
+    -moz-border-radius: var(--radius-80);
+    -ms-border-radius: var(--radius-80);
+    -o-border-radius: var(--radius-80);
+  }
+
+  .menu__mobile .nav__search-mobile img {
+    width: 3rem;
+  }
+  .menu__mobile .nav__search-mobile #nav__input {
+    width: 80%;
+    opacity: 1;
+  }
+
+  .menu__mobile .menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+    gap: 0;
+
+    max-height: 30rem;
+  }
+  .menu__mobile .nav__search-mobile #nav__input::placeholder {
+    font-size: 1.8rem;
+  }
+
+  .menu .menu__link {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    font-size: 1.8rem;
+  }
+  .menu .menu__link svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .menu__mobile .menu__item {
+    padding: 2rem 0;
+    border-bottom: 1px solid #25243a;
+    position: relative;
+    z-index: 90;
+  }
+
+  .menu__mobile .nav__links {
+    display: flex;
+    bottom: 2rem;
+    position: absolute;
+    max-width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  .menu__mobile .nav__links .app-btn {
+    max-width: 100%;
+    flex-grow: 1;
+    font-size: 2rem;
+    height: 5rem;
+  }
+  .menu__toggle {
+    display: flex;
+  }
+
+  .header::before {
+    background: linear-gradient(90deg, #1c1b29 25%, rgba(0, 0, 0, 0.4) 75%);
+  }
+
+  .header::after {
+    background: linear-gradient(to top, #1c1b29 3%, rgba(0, 0, 0, 0.0005) 10%);
+  }
+
+  .header__content-right {
+    margin-left: 0;
+    overflow-x: auto;
+  }
+
+  .pupular__photo {
+    height: 24rem;
+    padding-top: 2.5rem;
+    overflow: visible;
+    overflow-x: scroll;
+  }
+  .pupular__photo::-webkit-scrollbar {
+    display: none;
+  }
+
+  .trending__items {
+    display: none;
+  }
+
+  .trending .swiper,
+  .filter__results .swiper {
+    display: block;
+    margin-top: 5rem;
+    z-index: 0;
+  }
+  .bestgame .row {
+    flex-direction: column-reverse;
+  }
+  .bestgame__content-left {
+    width: 100%;
+    text-align: center;
+  }
+  .bestgame__content-right {
+    width: 100%;
+    text-align: center;
+  }
+  .content__right-head {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .bestgame__content-left > p,
+  .bestgame__info-wrapper,
+  .bestgame__content-left > h2 {
+    padding-left: 0;
+  }
+
+  .bestgame__img-wrapper img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Reviews {
+    position: relative;
+  }
+
+  .Reviews__item {
+    max-width: 40rem;
+  }
+  .Reviews__category {
+    min-height: 6rem;
+  }
+  .Reviews__content {
+    display: none;
+  }
+
+  .Reviews .swiper {
+    height: 95rem !important;
+    margin-bottom: 10rem;
+    display: block;
+    margin-top: 5rem;
+    z-index: 0;
+  }
+  .Reviews .swiper .swiper-slide {
+    height: 100% !important;
+    justify-content: center !important;
+    position: relative;
+    z-index: 1;
+  }
+
+  .swiper .Reviews__img-wrapper {
+    max-height: 40rem;
+  }
+
+  .swiper .Reviews__img-wrapper img {
+    object-fit: cover;
+  }
+
+  .Reviews .swiper .swiper-slide .Reviews__item {
+    height: 93rem;
+    max-width: 100%;
+  }
+
+  .Reviews .swiper .Reviews__item-cotent p {
+    color: var(--gray-200);
+    min-height: 22rem;
+  }
+  .Reviews .swiper .Reviews__item-info {
+    max-width: 100%;
+    width: 100%;
+  }
+  .Reviews .swiper .Reviews__ratio {
+    justify-content: space-around;
+  }
+  .Reviews .swiper .Reviews__category {
+    justify-content: center;
+  }
+  .upcoming__content {
+    display: none;
+  }
+  .upcoming .swiper {
+    margin-top: 2.5rem;
+    display: block;
+    z-index: 0;
+  }
+
+  .upcoming .swiper-slide .upcoming__items {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .upcoming .swiper-slide .upcoming__img-wrapper {
+    width: 100%;
+    max-height: 100%;
+  }
+  .upcoming .swiper-slide .upcoming__img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  .nav__search-btn--active {
+    width: 14.5rem;
+    margin-left: -4rem;
+    margin-right: -6rem;
+  }
+  .main {
+    margin-top: 60rem;
+  }
+  .footer__items {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    align-items: flex-start;
+  }
+  .footer__item:nth-child(2) .footer__list:nth-child(4) .footer__list-item {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bestgame__content-left .app-btn {
+    width: 100%;
+  }
+
+  .Reviews__img-wrapper {
+    max-height: 25rem;
+  }
+
+  .Reviews__item-info {
+    justify-content: center;
+  }
+  .Reviews__img-wrapper {
+    max-height: 40rem;
+    max-width: 100%;
+  }
+
+  .Reviews .swiper .Reviews__item-cotent p {
+    color: var(--gray-200);
+    min-height: 10rem;
+  }
+  .Reviews .swiper .swiper-slide .Reviews__item {
+    height: 83rem;
+    max-width: 100%;
+  }
+  .FAQ__item--active {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header::before {
+    background: linear-gradient(85deg, #1c1b29 25%, rgba(0, 0, 0, 0.4) 60%);
+  }
+
+  .menu__mobile .nav__search-mobile {
+    display: flex;
+  }
+
+  .menu__mobile .menu {
+    margin-top: 5rem;
+  }
+
+  .menu__mobile {
+    width: 30rem;
+    left: -30rem;
+  }
+
+  .menu__mobile .menu__item {
+    padding: 1.5rem 0;
+  }
+
+  .swiper .trending__item {
+    max-width: 100%;
+  }
+
+  .nav__search-btn {
+    display: none;
+  }
+  .main {
+    margin-top: 60rem;
+  }
+
+  .bestgame__info-wrapper {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .information__wrapper h2 {
+    max-width: 100%;
+    font-size: 1.6rem;
+  }
+
+  .information__wrapper h2 span {
+    font-size: 1.3rem;
+    color: var(--gray-200);
+    font-weight: 400;
+    margin-left: 0.5rem;
+  }
+  .Reviews .swiper {
+    height: 85rem !important;
+  }
+
+  .swiper-slide {
+    height: 100% !important;
+    justify-content: center !important;
+  }
+
+  .Reviews__img-wrapper {
+    max-height: 35rem;
+  }
+
+  .swiper-slide .Reviews__item {
+    height: 80rem;
+    padding-bottom: 4rem;
+  }
+  .blog__post {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    gap: 1rem;
+  }
+  .blog__information {
+    padding: 0.5rem;
+  }
+
+  .FAQ__title {
+    font-size: 1.3rem;
+  }
+  .FaQ__item-head svg {
+    width: 2rem;
+    margin-top: 1;
+    height: 2rem;
+  }
+  .FaQ__item-head {
+    padding: 1rem;
+  }
+
+  .FAQ__item--active {
+    height: 16rem;
+  }
+  .FAQ__items {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    background-position: -50rem center;
+  }
+  .header::before {
+    background: linear-gradient(90deg, #1c1b29 10%, rgba(0, 0, 0, 0.4) 80%);
+  }
+
+  .bestgame__create {
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .bestgame__ratio {
+    gap: 0.8rem;
+  }
+
+  .bestgame__ratio h1 span {
+    font-size: 1.2rem;
+  }
+  .bestgame__info {
+    margin-top: 0;
+    gap: 1rem;
+  }
+  .bestgame__info div p {
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+  .bestgame__info div h2 {
+    gap: 0.8rem;
+    font-size: 1.4rem;
+  }
+  .bestgame__console {
+    font-size: 1.2rem;
+    padding-top: 0;
+  }
+
+  .bestgame__information {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3rem;
+  }
+  .Reviews__item-cotent p {
+    min-height: 14rem;
+  }
+  .filter__game-box {
+    width: 100%;
+  }
+  .footer__items {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    align-items: flex-start;
+  }
+
+  .footer__item:nth-child(2) .footer__list:nth-child(4) .footer__list-item {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .bestgame__create {
+    gap: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .game__caption {
+    height: 23rem;
+  }
+  .menu__mobile {
+    width: 25rem;
+    left: -25rem;
+  }
+}
