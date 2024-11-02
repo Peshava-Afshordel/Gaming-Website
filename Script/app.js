@@ -22,9 +22,7 @@ window.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     loading.style.display = "none";
   }, 4000);
- 
 });
-
 
 //   change hero
 
@@ -92,7 +90,7 @@ accordionFaq.forEach((f) => {
 
 function changeHero(heroNumber) {
   if (heroNumber == 1) {
-    header.style.background = `url("../Assets/image/Hero.jfif")`;
+    header.style.background = `url("./Assets/image/Hero.jfif")`;
     header.style.backgroundPosition = "60% .5rem";
     header.style.backgroundSize = "cover";
     header.style.backgroundRepeat = "no-repeat";
@@ -102,7 +100,7 @@ function changeHero(heroNumber) {
     gameCreate.innerText = `May 19, 2015`;
     gameScores.innerHTML = `   <h1>93<span>/100</span></h1>`;
   } else if (heroNumber == 2) {
-    header.style.background = `url("../Assets/image/Property 1=RDR.png")`;
+    header.style.background = `url("./Assets/image/Property 1=RDR.png")`;
     header.style.height = "62rem";
     header.style.backgroundRepeat = "no-repeat";
 
@@ -113,7 +111,7 @@ function changeHero(heroNumber) {
     gameScores.innerHTML = `   <h1>97<span>/100</span></h1>`;
     gameCreate.innerText = `Oct 26, 2018`;
   } else if (heroNumber == 3) {
-    header.style.background = `url("../Assets/image/Property 1=TLOS.png")`;
+    header.style.background = `url("./Assets/image/Property 1=TLOS.png")`;
     header.style.height = "62rem";
     header.style.backgroundRepeat = "no-repeat";
 
@@ -124,7 +122,7 @@ function changeHero(heroNumber) {
     gameScores.innerHTML = `<h1>93<span>/100</span></h1>`;
     gameCreate.innerText = `Jun 19, 2020`;
   } else if (heroNumber == 4) {
-    header.style.background = `url("../Assets/image/Property 1=GOT.png")`;
+    header.style.background = `url("./Assets/image/Property 1=GOT.png")`;
     header.style.backgroundRepeat = "no-repeat";
     header.style.backgroundPosition = "center .5rem";
     header.style.backgroundSize = "cover";
@@ -133,7 +131,7 @@ function changeHero(heroNumber) {
     gameScores.innerHTML = `<h1>83<span>/100</span></h1>`;
     gameCreate.innerText = `Jul 17, 2020`;
   } else if (heroNumber == 5) {
-    header.style.background = `url("../Assets/image/Property 1=GOW.png")`;
+    header.style.background = `url("./Assets/image/Property 1=GOW.png")`;
     header.style.backgroundPosition = "center 1rem";
     header.style.backgroundSize = "cover";
     header.style.backgroundRepeat = "no-repeat";
@@ -192,7 +190,7 @@ function autoChangeHero() {
     if (i > 5) {
       i = 1;
     }
-    setTimeout(heroNext, 6000);
+    setTimeout(heroNext, 3000);
   });
   heroNext();
 }
