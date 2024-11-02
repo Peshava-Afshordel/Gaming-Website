@@ -19,9 +19,7 @@ const accordionFaq = document.querySelectorAll(".FAQ__item");
 const loading = document.querySelector(".loading");
 
 window.addEventListener("DOMContentLoaded", function () {
-  setTimeout(() => {
-    loading.style.display = "none";
-  }, 4000);
+  loading.style.display = "none";
 });
 
 //   change hero
@@ -182,7 +180,7 @@ accordionFaq.forEach((f) => {
 
 function autoChangeHero() {
   let i = 1;
-  function heroNext() {
+  window.addEventListener("DOMContentLoaded", function heroNext() {
     changeHero(i);
     changeHeroImg(i);
     i++;
@@ -190,7 +188,7 @@ function autoChangeHero() {
       i = 1;
     }
     setTimeout(heroNext, 3000);
-  }
+  });
   heroNext();
 }
 
