@@ -178,18 +178,18 @@ accordionFaq.forEach((f) => {
   });
 });
 
-function autoChangeHero() {
-  let i = 1;
-  window.addEventListener("DOMContentLoaded", function heroNext() {
-    changeHero(i);
-    changeHeroImg(i);
-    i++;
-    if (i > 5) {
-      i = 1;
-    }
-    setTimeout(heroNext, 3000);
-  });
-  heroNext();
-}
+// function autoChangeHero() {
+//   let i = 1;
+//   window.addEventListener("DOMContentLoaded", function heroNext() {
+//     changeHero(i);
+//     changeHeroImg(i);
+//     i++;
+//     if (i > 5) {
+//       i = 1;
+//     }
+//     setTimeout(heroNext, 3000);
+//   });
+//   heroNext();
+// }
 
 // autoChangeHero();
