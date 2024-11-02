@@ -23,6 +23,62 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 //   change hero
+function changeHero(heroNumber) {
+  if (heroNumber == 1) {
+    header.style.background = `url("../Assets/image/Hero.jfif")`;
+    header.style.backgroundPosition = "center";
+    header.style.backgroundSize = "cover";
+    header.style.backgroundRepeat = "no-repeat";
+    header.style.height = "62rem";
+    gameTitle.innerText = "The Witcher 3";
+    gameCaption.innerText = `The Witcher 3: Wild Hunt" is an open-world RPG where players follow Geralt of Rivia, a monster hunter, in his quest to find his adopted daughter, Ciri. Set in a richly detailed and expansive world, the game offers a deep narrative and complex choices that affect the game's outcome.`;
+    gameCreate.innerText = `May 19, 2015`;
+    gameScores.innerHTML = `   <h1>93<span>/100</span></h1>`;
+  } else if (heroNumber == 2) {
+    header.style.background = `url("../Assets/image/Property 1=RDR.png")`;
+    header.style.height = "62rem";
+    header.style.backgroundRepeat = "no-repeat";
+
+    header.style.backgroundPosition = "center";
+    header.style.backgroundSize = "cover";
+    gameTitle.innerText = "Red Dead Redemtion II";
+    gameCaption.innerText = `In this open-world action-adventure game, players control Arthur Morgan, an outlaw navigating the downfall of the Wild West. Set in a vast, immersive world, the game follows Arthur’s struggles with loyalty, survival, and morality as his gang faces opposition from law enforcement.`;
+    gameScores.innerHTML = `   <h1>97<span>/100</span></h1>`;
+    gameCreate.innerText = `Oct 26, 2018`;
+  } else if (heroNumber == 3) {
+    header.style.background = `url("../Assets/image/Property 1=TLOS.png")`;
+    header.style.height = "62rem";
+    header.style.backgroundRepeat = "no-repeat";
+
+    header.style.backgroundPosition = "60% center";
+    header.style.backgroundSize = "cover";
+    gameTitle.innerText = "The Last Of Us II";
+    gameCaption.innerText = `The Last of Us Part II continues the emotional journey of Ellie, now older and seeking revenge. Set in a post-apocalyptic world, the game combines stealth and action, forcing players to confront moral dilemmas and the harsh consequences of violence.`;
+    gameScores.innerHTML = `<h1>93<span>/100</span></h1>`;
+    gameCreate.innerText = `Jun 19, 2020`;
+  } else if (heroNumber == 4) {
+    header.style.background = `url("../Assets/image/Property 1=GOT.png")`;
+    header.style.backgroundRepeat = "no-repeat";
+    header.style.backgroundPosition = "center .5rem";
+    header.style.backgroundSize = "cover";
+    gameTitle.innerText = "Ghost Of Tushima";
+    gameCaption.innerText = `Set in feudal Japan, players follow Jin Sakai, a samurai warrior defending his home from Mongol invaders. Blending stealth, swordplay, and open-world exploration, the game is a tribute to classic samurai films and the code of honor that drives its protagonist.`;
+    gameScores.innerHTML = `<h1>83<span>/100</span></h1>`;
+    gameCreate.innerText = `Jul 17, 2020`;
+  } else if (heroNumber == 5) {
+    header.style.background = `url("../Assets/image/Property 1=GOW.png")`;
+    header.style.backgroundPosition = "center 1rem";
+    header.style.backgroundSize = "cover";
+    header.style.backgroundRepeat = "no-repeat";
+    gameTitle.innerText = "God Of War: Ragnorag";
+    gameCaption.innerText = `In this soft reboot, Kratos embarks on a journey with his son Atreus in the world of Norse mythology. Combining intense combat with a rich narrative, the game explores themes of fatherhood, redemption, and the gods’ power over fate honor that drives its protagonist.`;
+    gameScores.innerHTML = `<h1>94<span>/100</span></h1>`;
+    gameCreate.innerText = ` Apr 20, 2018`;
+  }
+}
+
+
+
 
 
 function addActiveClass(name, activeClass) {
