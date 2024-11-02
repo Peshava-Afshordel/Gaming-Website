@@ -192,4 +192,4 @@ function autoChangeHero() {
   heroNext();
 }
 
-autoChangeHero();
+// autoChangeHero();
