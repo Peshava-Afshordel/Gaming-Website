@@ -2718,3 +2718,16 @@ p {
     background-size: 20% 50%, 20% 50%, 20% 50%;
   }
 }
+
+.holder {
+  height: 0;
+  display: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.holder img {
+  height: 0;
+  display: hidden;
+  pointer-events: none;
+}
