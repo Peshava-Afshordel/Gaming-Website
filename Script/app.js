@@ -19,8 +19,12 @@ const accordionFaq = document.querySelectorAll(".FAQ__item");
 const loading = document.querySelector(".loading");
 
 window.addEventListener("DOMContentLoaded", function () {
-  loading.style.display = "none";
+  setTimeout(() => {
+    loading.style.display = "none";
+  }, 4000);
+ 
 });
+
 
 //   change hero
 
