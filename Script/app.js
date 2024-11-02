@@ -188,7 +188,7 @@ function autoChangeHero() {
     if (i > 5) {
       i = 1;
     }
-    setTimeout(heroNext, 3000);
+    setTimeout(heroNext, 6000);
   });
   heroNext();
 }
